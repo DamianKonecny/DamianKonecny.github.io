@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    color: lawngreen;
+}
+
+.centruj {
+    font-size: 50px;
+    text-align: center;
+}
+
+.image-container {
+    height: auto;
+    float: left;
+    overflow: hidden;
+    margin-top: 10%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.image-vedlaSeba {
+
+    transition: .2s ease;
+    width: 33%;
+    height: auto;
+    float: left;
+    margin: 2px;
+}
+
+.image-vedlaSeba:hover {
+    opacity: 0.3;
+}
+
+.button-containerPravo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /*top: 30px;*/
+    left: 27%;
+}
+
+.button {
+    background-color: lawngreen;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 200px;
+    margin-right: 10px;
+}
+/*
+.button-containerLavo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    right: 2px;
+}*/
+
+
+
+.move-button {
+    position: relative;
+    left: 10px;
+    transition:0s 20000s ;
+
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    /*transition: transform 0.2s;*/
+}
+
+
+.move-button:hover {
+    left: 1250px;
+    transition:0s 0s;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .lavyStlpec, .pravyStlpec {
+        width: 100%;
+    }
+}
