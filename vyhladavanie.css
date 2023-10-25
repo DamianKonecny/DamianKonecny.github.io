@@ -85,8 +85,14 @@ button:hover {
 }
 
 /* Prídavky pre responzívny dizajn (na menších obrazovkách) */
-@media screen and (max-width: 768px) {
-    input[type="text"] {
-        width: 100%;
+@media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
+        .search-box {
+            margin-right: 20px;
+
+        }
+        input[type="text"] {
+            width: 100%; /* Zmena šírky na 100% pre menšie obrazovky */
+        }
     }
 }
