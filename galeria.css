@@ -1,3 +1,4 @@
+/*
 body {
     background-color: black;
     color: lawngreen;
@@ -39,9 +40,9 @@ body {
 
     position: relative;
     /*top: 30px;*/
-    left: 27%;
-}
-
+  /*  left: 27%;
+}*/
+/*
 .button {
     background-color: lawngreen;
     border: none;
@@ -55,7 +56,7 @@ body {
     cursor: pointer;
     border-radius: 200px;
 
-}
+}*/
 /*
 .button-containerLavo {
     display: flex;
@@ -67,7 +68,7 @@ body {
 }*/
 
 
-
+/*
 .move-button {
     position: relative;
     left: 10px;
@@ -80,19 +81,100 @@ body {
     text-align: center;
     line-height: 50px;
     cursor: pointer;
-    /*transition: transform 0.2s;*/
-}
+    transition: transform 0.2s;
+}*/
 
-
+/*
 .move-button:hover {
-    left: 1250px;
+    left: 80%;
     transition:0s 0s;
 
 }
 
 
 @media screen and (max-width: 600px) {
-    .lavyStlpec, .pravyStlpec {
+    {
         width: 100%;
+    }
+}*/
+
+body {
+    background-color: black;
+    color: lawngreen;
+    margin: 0;
+}
+
+.centruj {
+    font-size: 50px;
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-vedlaSeba {
+    width: 33%;
+    margin: 2px;
+    float: left;
+    transition: 0.2s ease;
+}
+
+.image-vedlaSeba:hover {
+    opacity: 0.3;
+}
+
+.button-containerPravo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: lawngreen;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 200px;
+}
+
+.move-button {
+    position: relative;
+    left: 10px;
+    transition: 0s 20000s;
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.move-button:hover {
+    left: 80%;
+    transition: 0s 0s;
+}
+
+@media screen and (max-width: 600px) {
+    .image-vedlaSeba {
+        width: 100%; /* Make images stack vertically on small screens */
+    }
+    .button-containerPravo {
+        flex-direction: column; /* vertikalne tlacidla na malych obrazovkach */
+        align-items: center; /* horizontalne tlacidla na malych obrazovkach*/
     }
 }
