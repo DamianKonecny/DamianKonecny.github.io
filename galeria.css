@@ -69,12 +69,24 @@ body {
     transition: 0s 0s;
 }
 
+/*responzivny dizajn*/
 @media screen and (max-width: 600px) {
     .image-vedlaSeba {
         width: 100%;
     }
     .button-containerPravo {
-        flex-direction: column; /* vertikalne tlacidla na malych obrazovkach */
-        align-items: center; /* horizontalne tlacidla na malych obrazovkach*/
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .move-button {
+        position: static;
+        left: 0;
+        width: 100px;
+        text-align: center;
+    }
+
+    .move-button:hover {
+        left: 0;
     }
 }
